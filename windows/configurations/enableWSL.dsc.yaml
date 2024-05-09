@@ -17,3 +17,4 @@ properties:
       settings:
         Name: Microsoft-Windows-Subsystem-Linux
         Ensure: Present
+    # TODO: Enable Virtual Machine Platform optional feature
