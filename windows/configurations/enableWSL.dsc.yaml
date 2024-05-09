@@ -17,4 +17,11 @@ properties:
       settings:
         Name: Microsoft-Windows-Subsystem-Linux
         Ensure: Present
-    # TODO: Enable Virtual Machine Platform optional feature
+    - resource: xPSDesiredStateConfiguration/xWindowsOptionalFeature
+      id: enableVirtualMachinePlatform
+      directives:
+        description: Enable Virtual Machine Platform
+        allowPrerelease: true
+      settings:
+        Name: VirtualMachinePlatform
+        Ensure: Present
