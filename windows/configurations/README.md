@@ -14,6 +14,7 @@ To install the modules:
 ```pwsh
 Install-Module -Name Microsoft.Windows.Developer -AllowPrerelease
 Install-Module -Name Microsoft.WinGet.DSC -AllowPrerelease
+Install-Module -Name xPSDesiredStateConfiguration -AllowPrerelease
 ```
 
 ## How to Use
