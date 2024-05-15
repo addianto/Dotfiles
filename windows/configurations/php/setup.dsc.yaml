@@ -1,0 +1,20 @@
+---
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: 0.2.0
+  assertions:
+    - resource: Microsoft.Windows.Developer/OsVersion
+      directives:
+        description: Verify min OS version requirement
+        allowPrerelease: true
+      settings:
+        MinVersion: "10.0.19041"
+  resources:
+    - resource: xPSDesiredStateConfiguration/xRemoteFile
+      id: downloadPvm
+      directives:
+        description: Download PVM (PHP Version Manager)
+        allowPreleases: true
+      settings:
+        Uri: 'https://github.com/hjbdev/pvm/releases/download/1.0-alpha-2/pvm.exe'
+        DestinationPath: "C:\\Users\\addianto\\.local\\bin\\pvm.exe" # TODO: Parameterise the path to home directory on Windows by using $env:UserProfile
