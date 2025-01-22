@@ -1,0 +1,6 @@
+# DeepSeek-R1 1.5B Qwen Distilled Model
+# Dense (distilled) model based on DeepSeek-R1 and Qwen 2.5 Math.
+FROM deepseek-r1:1.5b-qwen-distill-fp16
+
+# Set the model temperature according to the recommendation found at https://github.com/deepseek-ai/DeepSeek-R1?tab=readme-ov-file#usage-recommendations
+PARAMETER temperature 0.6
