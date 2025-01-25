@@ -4,8 +4,10 @@ My personalised Ollama configuration and models.
 
 ## Configuration
 
-I use the default configuration provided by Ollama.
-The option that I enable is regarding flash attention.
+I use the default configuration, except:
+
+- `OLLAMA_FLASH_ATTENTION` is set to 1 on a machine with an Nvidia GPU.
+- `OLLAMA_HOST` is set to a value other than `127.0.0.1:11434` on a Raspberry Pi.
 
 ## Models
 
