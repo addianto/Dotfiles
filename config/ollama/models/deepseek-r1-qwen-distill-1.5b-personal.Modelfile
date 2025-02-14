@@ -1,7 +1,0 @@
-# DeepSeek-R1 Qwen Distill 1.5B
-# A dense (distilled) model based on DeepSeek-R1 and Qwen 2.5 Math.
-FROM deepseek-r1:1.5b-qwen-distill-fp16
-
-# Follow the generation config from the upstream: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/main/generation_config.json
-PARAMETER temperature 0.6
-PARAMETER top_p 0.95
